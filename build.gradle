@@ -21,7 +21,7 @@ plugins {
 }
 */
 
-version = "3.0.0"
+version = "2.5.0"
 group= "nl.lang2619.bagginses" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "Bagginses"
 
@@ -29,7 +29,7 @@ sourceCompatibility = 1.7
 targetCompatibility = 1.7
 
 minecraft {
-    version = "1.10-12.18.0.1992-1.10.0"
+    version = "1.9.4-12.17.0.1976"
     runDir = "run"
 
     mappings = "snapshot_20160520"
