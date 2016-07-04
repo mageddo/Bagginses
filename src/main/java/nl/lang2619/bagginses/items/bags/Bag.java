@@ -54,6 +54,9 @@ public class Bag extends Item {
     }
 
     public String getUnlocalizedName(ItemStack itemStack) {
+        if (type == BagTypes.TIER2) {
+            return "backpack_" + color + "T2";
+        }
         return "backpack_" + color;
     }
 
@@ -130,7 +133,7 @@ public class Bag extends Item {
                 String[] parts = msg.split("\n");
                 for (int i = 0; i < Math.min(3, parts.length); i++) {
                     if (parts[i] != null
-                    && !("").equals(parts[i])) {
+                            && !("").equals(parts[i])) {
                         list.add(parts[i]);
                     }
                 }
